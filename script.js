@@ -14,9 +14,9 @@ function pageTransitions() {
     }
 
     // sections active class 
-    allSections.addEventListener('click', function(e) {
+    allSections.addEventListener('click', function (e) {
         const id = e.target.dataset.id
-        if(id) {
+        if (id) {
             sectBtns.forEach((btn) => {
                 btn.classList.remove('active')
             })
@@ -29,7 +29,7 @@ function pageTransitions() {
 
             const element = document.getElementById(id)
             element.classList.add('active')
-            
+
         }
     })
 }
